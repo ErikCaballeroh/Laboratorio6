@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laboratorio 6</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Menu de navegacion -->
+  <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">GithubTest</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="pagina1.html">Pagina 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina2.html">Pagina 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina3.html">Pagina 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido -->
+  <main class="container py-4">
+    <h1 class="text-center">Resumen de Git</h1>
+    <div class="card mt-4">
+      <div class="card-header">
+        <h4>¿Qué es Git?</h4>
+      </div>
+      <div class="card-body">
+        <p>Git es un sistema de control de versiones distribuido que permite a los desarrolladores gestionar el código
+          fuente de sus proyectos de manera eficiente. Permite registrar los cambios realizados en el código,
+          facilitando la colaboración y el seguimiento de versiones.</p>
+      </div>
+    </div>
+
+    <div class="card mt-4">
+      <div class="card-header">
+        <h4>Comandos Básicos</h4>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li><strong>git init</strong>: Inicializa un nuevo repositorio de Git.</li>
+          <li><strong>git clone [URL]</strong>: Clona un repositorio existente.</li>
+          <li><strong>git status</strong>: Muestra el estado actual del repositorio.</li>
+          <li><strong>git add [archivo]</strong>: Agrega un archivo al área de preparación.</li>
+          <li><strong>git commit -m "mensaje"</strong>: Confirma los cambios en el repositorio.</li>
+          <li><strong>git push</strong>: Envía los cambios al repositorio remoto.</li>
+          <li><strong>git pull</strong>: Obtiene los cambios del repositorio remoto y los integra.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mt-4">
+      <div class="card-header">
+        <h4>Flujo de Trabajo Básico</h4>
+      </div>
+      <div class="card-body">
+        <ol>
+          <li>Inicializa un repositorio con <code>git init</code>.</li>
+          <li>Realiza cambios en tu proyecto.</li>
+          <li>Agrega los archivos modificados con <code>git add</code>.</li>
+          <li>Confirma los cambios con <code>git commit</code>.</li>
+          <li>Envía los cambios al repositorio remoto con <code>git push</code>.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="card mt-4 mb-5">
+      <div class="card-header">
+        <h4>Ramas en Git</h4>
+      </div>
+      <div class="card-body">
+        <p>Las ramas son una característica clave en Git que permite trabajar en distintas versiones de un proyecto al
+          mismo tiempo. El comando <code>git branch</code> se utiliza para listar, crear o eliminar ramas.</p>
+        <ul>
+          <li><strong>git branch [nombre-rama]</strong>: Crea una nueva rama.</li>
+          <li><strong>git checkout [nombre-rama]</strong>: Cambia a la rama especificada.</li>
+          <li><strong>git merge [nombre-rama]</strong>: Combina la rama especificada con la actual.</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card-group">
+      <div class="card">
+        <img src="img/pag1/img1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aprende GIT ahora! curso completo GRATIS desde cero</h5>
+          <p class="card-text">Aprende Git desde cero: crea repositorios, gestiona versiones y colabora en equipo para
+            llevar tus proyectos al siguiente nivel.</p>
+          <p class="card-text"><small class="text-body-secondary">@HolaMundo</small></p>
+          <a class="btn btn-secondary" href="https://youtu.be/VdGzPZ31ts8?si=jTCHPCAEhAh58tw1" target="_blank">Ver
+            ahora</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/pag1/img2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Curso de GIT y GITHUB DESDE CERO Para Aportar a Proyectos</h5>
+          <p class="card-text">Aprende Git y Github desde cero para que puedas dar tu primer en aportar a proyectos
+            populares y tengas un impacto bastante positivo, además compartiremos tips y trucos para escribir un buen
+            commit, un Pull Request esto y más!!
+          </p>
+          <p class="card-text"><small class="text-body-secondary">@midulive</small></p>
+          <a class="btn btn-secondary" href="https://youtu.be/VdGzPZ31ts8?si=jTCHPCAEhAh58tw1" target="_blank">Ver
+            ahora</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/pag1/img3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Curso de GIT y GITHUB desde CERO para PRINCIPIANTES</h5>
+          <p class="card-text">Git y GitHub son dos herramientas fundamentales en el mundo del desarrollo de software.
+            Este es un curso desde cero creado para aprender a trabajar con ellas y así mejorar como programadores.</p>
+          <p class="card-text"><small class="text-body-secondary">@MoureDev by Brais Moure</small></p>
+          <a class="btn btn-secondary" href="https://youtu.be/VdGzPZ31ts8?si=jTCHPCAEhAh58tw1" target="_blank">Video</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

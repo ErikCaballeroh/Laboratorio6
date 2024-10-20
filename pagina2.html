@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laboratorio 6</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Menu de navegacion -->
+  <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">GithubTest</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="pagina1.html">Pagina 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="pagina2.html">Pagina 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina3.html">Pagina 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido -->
+  <main class="container py-4">
+    <h1 class="text-center">Resumen de GitHub</h1>
+
+
+
+    <!-- Acordeón sobre temas clave -->
+    <div class="accordion mb-4" id="githubAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            ¿Qué es GitHub?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#githubAccordion">
+          <div class="accordion-body">
+            GitHub es una plataforma para el alojamiento de código fuente y control de versiones mediante Git. Permite a
+            los desarrolladores colaborar en proyectos de manera efectiva, llevar un historial de cambios, y contribuir
+            a proyectos de código abierto.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Comandos Básicos
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#githubAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li><strong>git clone [URL]</strong>: Clona un repositorio remoto en tu máquina local.</li>
+              <li><strong>git commit -m "mensaje"</strong>: Registra cambios locales con un mensaje descriptivo.</li>
+              <li><strong>git push origin [rama]</strong>: Envía tus cambios a la rama especificada en el repositorio
+                remoto.</li>
+              <li><strong>git pull</strong>: Actualiza tu copia local con los cambios del repositorio remoto.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Buenas Prácticas
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#githubAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Usa ramas para trabajar en nuevas características sin afectar la rama principal.</li>
+              <li>Confirma los cambios frecuentemente para un historial claro y organizado.</li>
+              <li>Colabora mediante Pull Requests para revisar cambios antes de fusionarlos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrusel de Imágenes de GitHub -->
+    <div id="carouselExample" class="carousel slide mb-4 50vh" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/pag2/1.jpg" class="d-block w-100" alt="Interfaz de GitHub">
+        </div>
+        <div class="carousel-item">
+          <img src="img/pag2/2.jpg" class="d-block w-100" alt="Control de Versiones">
+        </div>
+        <div class="carousel-item">
+          <img src="img/pag2/3.jpg" class="d-block w-100" alt="Colaboración en Proyectos">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Alertas -->
+    <div class="alert alert-info" role="alert">
+      ¡Nuevo! GitHub ha lanzado recientemente una actualización que mejora la integración con GitHub Copilot.
+    </div>
+    <div class="alert alert-success" role="alert">
+      Recuerda habilitar la autenticación de dos factores en tu cuenta para mayor seguridad.
+    </div>
+
+    <p>GitHub es una herramienta poderosa que permite la colaboración y el control eficiente de proyectos de software.
+      Ya seas un desarrollador individual o trabajes en un equipo, conocer estas herramientas y buenas prácticas es
+      esencial para maximizar la productividad y la calidad de tus proyectos.</p>
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

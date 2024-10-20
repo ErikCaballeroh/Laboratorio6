@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laboratorio 6</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#scrollspyList" data-bs-offset="0" tabindex="0">
+  <!-- Menú de navegación -->
+  <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">GithubTest</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="pagina1.html">Pagina 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina2.html">Pagina 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="pagina3.html">Pagina 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    <h1 class="text-center">Resumen de GitHub Desktop</h1>
+    <div class="row">
+      <div class="col-md-3">
+        <!-- Lista Scrollspy -->
+        <ul class="list-group position-sticky" style="top: 20px;" id="scrollspyList">
+          <li><a class="list-group-item list-group-item-action" href="#section1">¿Qué es GitHub Desktop?</a></li>
+          <li><a class="list-group-item list-group-item-action" href="#section2">Características Principales</a></li>
+          <li><a class="list-group-item list-group-item-action" href="#section3">Flujo de Trabajo Básico</a></li>
+          <li><a class="list-group-item list-group-item-action" href="#section4">Comandos y Funcionalidades</a></li>
+          <li><a class="list-group-item list-group-item-action" href="#section5">Buenas Prácticas</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-9">
+        <!-- Contenido -->
+        <div id="section1" class="card mt-4">
+          <div class="card-header">
+            <h4>¿Qué es GitHub Desktop?</h4>
+          </div>
+          <div class="card-body">
+            <p>GitHub Desktop es una aplicación de escritorio que facilita el uso de Git y GitHub sin necesidad de
+              utilizar
+              la terminal. Permite a los desarrolladores gestionar sus repositorios, hacer commits, y sincronizar
+              cambios de
+              manera visual e intuitiva, lo que la hace ideal para quienes prefieren interfaces gráficas.</p>
+          </div>
+          <img src="img/pag3/1.png" class="img-fluid mb-3" alt="GitHub Desktop">
+        </div>
+
+        <div id="section2" class="card mt-4">
+          <div class="card-header">
+            <h4>Características Principales</h4>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li><strong>Interfaz Gráfica:</strong> Permite gestionar repositorios, ramas y commits de manera visual.
+              </li>
+              <li><strong>Integración con GitHub:</strong> Sincroniza automáticamente los cambios con tu cuenta de
+                GitHub.</li>
+              <li><strong>Creación y Cambio de Ramas:</strong> Facilita la creación, cambio y fusión de ramas sin
+                comandos
+                de terminal.</li>
+              <li><strong>Vista de Cambios:</strong> Muestra claramente las diferencias entre versiones para facilitar
+                la
+                revisión de código.</li>
+            </ul>
+            <img src="img/pag3/2.png" class="img-fluid mb-3" alt="Características">
+          </div>
+        </div>
+
+        <div id="section3" class="card mt-4">
+          <div class="card-header">
+            <h4>Flujo de Trabajo Básico con GitHub Desktop</h4>
+          </div>
+          <div class="card-body">
+            <ol>
+              <li>Descarga e instala GitHub Desktop desde el sitio oficial.</li>
+              <li>Clona un repositorio existente o crea uno nuevo desde la aplicación.</li>
+              <li>Realiza cambios en tu proyecto desde tu editor de código preferido.</li>
+              <li>Regresa a GitHub Desktop, visualiza los cambios y haz un commit con un mensaje descriptivo.</li>
+              <li>Haz click en "Push" para sincronizar tus cambios con el repositorio remoto en GitHub.</li>
+            </ol>
+          </div>
+          <img src="img/pag3/3.png" class="img-fluid mb-3" alt="Flujo de Trabajo">
+        </div>
+
+        <div id="section4" class="card mt-4">
+          <div class="card-header">
+            <h4>Comandos y Funcionalidades Útiles</h4>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li><strong>Clone Repository:</strong> Clona un repositorio desde GitHub para trabajar en él
+                localmente.</li>
+              <li><strong>Fetch Origin:</strong> Obtiene los últimos cambios del repositorio remoto sin fusionarlos.
+              </li>
+              <li><strong>Pull Changes:</strong> Trae y fusiona los cambios del repositorio remoto con tu copia local.
+              </li>
+              <li><strong>Create Branch:</strong> Crea una nueva rama para trabajar en una característica específica.
+              </li>
+            </ul>
+            <img src="img/pag3/4.png" class="img-fluid mb-3" alt="Comandos">
+          </div>
+        </div>
+
+        <div id="section5" class="card mt-4 mb-5">
+          <div class="card-header">
+            <h4>Buenas Prácticas con GitHub Desktop</h4>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Realiza commits frecuentemente para mantener un historial claro y detallado de tus cambios.</li>
+              <li>Usa ramas para trabajar en nuevas características o correcciones sin afectar la rama principal.</li>
+              <li>Sincroniza tus cambios regularmente para mantener tu repositorio local y remoto en sincronía.</li>
+              <li>Revisa visualmente los cambios antes de hacer un commit para asegurarte de que todo esté correcto.
+              </li>
+            </ul>
+            <img src="img/pag3/5.png" class="img-fluid mb-3" alt="Buenas Prácticas">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
